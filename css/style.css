@@ -117,6 +117,11 @@ body {
   font-size: 15px;
   color: #1c1c1c;
 }
+
+.header-link-home {
+  color: #3474ba;
+  border-bottom: 2px solid #3474ba;
+}
 .btn {
   padding: 15px 35px;
   background-color: #3172b9;
@@ -246,6 +251,9 @@ body {
 }
 
 /* articles */
+.articles {
+  border-bottom: 1px solid #dadada;
+}
 .articles-list {
   flex-wrap: wrap;
 }
@@ -253,7 +261,12 @@ body {
 .articles-item {
   width: 570px;
   margin-bottom: 30px;
-  outline: 1px solid blueviolet;
+}
+
+.blog-preview {
+  overflow: hidden;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
 }
 
 .articles-item:not(:nth-child(2n)) {
@@ -265,30 +278,49 @@ body {
 }
 
 .blog-preview-text {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
 }
 
 .blog-preview-time {
   display: block;
   margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #787878;
 }
 
 .blog-preview-title {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1c1c1c;
 }
 
 .blog-preview-descr {
   margin: 0;
+  max-width: 210px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787878;
 }
 
 /* clients */
+.clients {
+  border-bottom: 1px solid #dadada;
+}
 .clients-item {
   flex-direction: column;
   width: 370px;
   padding: 50px 36px;
   padding-bottom: 30px;
-  outline: 1px solid blueviolet;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
 }
 
 .clients-item:not(:nth-child(3n)) {
@@ -296,22 +328,51 @@ body {
 }
 
 .clients-descr {
+  max-width: 280px;
   margin: 0;
   margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
 }
 
 .clients-user {
+  padding-top: 30px;
   margin-top: auto;
   align-items: center;
+  border-top: 1px solid #dadada;
 }
 .clients-avatar {
   flex-shrink: 0;
   width: 67px;
   margin-right: 17px;
+  background-size: contain;
+}
+
+.clients-avatar img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #3172b9;
+  border-radius: 100%;
+}
+
+.clients-text {
+  flex-direction: column;
 }
 
 .clients-name {
-  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 180%;
+  color: #1c1c1c;
+}
+
+.clients-post {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
 }
 
 /* contacts */
