@@ -15,3 +15,23 @@ menuLinks.forEach((el) => {
     document.body.classList.remove("stop-scroll");
   });
 });
+
+/*======== show more button =========*/
+
+let showMore = document.querySelector(".show-more");
+let articlesLength = document.querySelectorAll(".articles-item").length;
+
+let items = 2;
+
+showMore.addEventListener("click", () => {
+  items += 2;
+  const arrayItems = Array.from(
+    document.querySelector(".articles-list").children
+  );
+  const visItems = arrayItems.slice(0, items);
+  visItems.forEach((el) => el.classList.add("is-visible"));
+
+  if (visItems.length === articlesLength) {
+    showMore.style.display = "none";
+  }
+});

@@ -336,6 +336,11 @@ body {
 .articles {
   border-bottom: 1px solid #dadada;
 }
+
+.btn-center {
+  display: none;
+}
+
 .articles-list {
   flex-wrap: wrap;
 }

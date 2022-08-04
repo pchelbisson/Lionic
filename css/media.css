@@ -263,6 +263,12 @@
     font-size: 12px;
   }
 
+  .btn-center {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+  }
+
   .article-title {
     margin-bottom: 14px;
   }
@@ -271,9 +277,25 @@
     margin-right: 0;
   }
 
+  .articles-item:nth-child(n + 3) {
+    display: none;
+  }
+
+  .articles-list .is-visible {
+    display: block;
+  }
+
   .articles-item {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  .articles-item.articles-item--visible {
+    display: block;
+  }
+
+  .articles-center--hidden {
+    display: none;
   }
 
   .blog-preview-link {
